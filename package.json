@@ -1,0 +1,48 @@
+{
+  "name": "grail-chat",
+  "version": "1.0.0",
+  "description": "Simple Chat Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --require babel-core/register",
+    "build": "browserify -t [ babelify --presets [ es2015 react ] ] client/index.js -o public/app.js",
+    "server": "babel-node server.js --presets es2015"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "bufferutil": "^1.2.1",
+    "chai": "^3.5.0",
+    "charset": "^1.0.0",
+    "express": "^4.14.0",
+    "hiredis": "^0.5.0",
+    "mocha": "^3.0.2",
+    "node-sass-middleware": "^0.9.8",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "redis-connection": "^5.0.0",
+    "simple-peer": "^6.0.5",
+    "simple-websocket": "^4.1.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8",
+    "socket.io-emitter": "^1.0.0",
+    "utf-8-validate": "^1.2.1",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "decache": "^4.1.0",
+    "fakeredis": "^1.0.3",
+    "mockery": "^1.7.0",
+    "node-redis-mock": "^0.2.16",
+    "proxyquire": "^1.7.10",
+    "require-subvert": "^0.1.0",
+    "sinon": "^1.17.5",
+    "socketio-wildcard": "^0.3.0"
+  }
+}
